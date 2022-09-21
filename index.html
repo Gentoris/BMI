@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .bold{
+            font-weight: bold;
+        }
+        h2{
+            color: orange;
+        }
+        #s{
+            color: orange;
+        }
+        section{
+            background-color: orange;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    WORKING....
+    <section>
+    <p>Írja be cm-ben számított testmagasságát (cipő nélkül mérve):<input type="number" id="cm" value="0">cm</p>
+    <p>Írja be kg-ban számított testsúlyát (cipő nélkül mérve):<input type="number" id="kg" value="0">kg</p>
+    <br>
+    <button>Számítás</button>
+    </section>
+    
+
+    <h2>AZ ÖN BMI ÉRTÉKE: </h2>
+    <table>
+        <tr>
+            <td class="bold">18,5 vagy kevesebb</td>
+            <td>SOVÁNY</td>
+        </tr>
+        <tr>
+            <td class="bold">18,5-24,9</td>
+            <td>NORMÁL</td>
+        </tr>
+        <tr>
+            <td class="bold">25 - 29,9</td>
+            <td>TÚLSÚLY</td>
+        </tr>
+        <tr>
+            <td class="bold">30-34,9</td>
+            <td>I.FOKÚ ELHÍZÁS</td>
+        </tr>
+        <tr>
+            <td class="bold">35- 39,9</td>
+            <td>II.FOKÚ ELHÍZÁS</td>
+        </tr>
+        <tr>
+            <td class="bold">40 vagy több</td>
+            <td>III.FOKÚ ELHÍZÁS</td>
+        </tr>
+    </table>
+    <h2>AZ IDEÁLIS TESTTÖMEGE: </h2>
+    <table>
+        <tr>
+            <td id="s">56.7 - 76.3kg</td>
+            <td>Kívánatos szélső értékek</td>
+        </tr>
+    </table>
 </body>
 </html>
