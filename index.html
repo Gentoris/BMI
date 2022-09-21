@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <script src="main.js"></script>
     <style>
         .bold{
             font-weight: bold;
@@ -20,6 +20,12 @@
             background-color: orange;
             color: white;
         }
+        #BMI{
+            background-color: white;
+        }
+        #ideal{
+            background-color: white;
+        }
     </style>
 </head>
 <body>
@@ -27,11 +33,12 @@
     <p>Írja be cm-ben számított testmagasságát (cipő nélkül mérve):<input type="number" id="cm" value="0">cm</p>
     <p>Írja be kg-ban számított testsúlyát (cipő nélkül mérve):<input type="number" id="kg" value="0">kg</p>
     <br>
-    <button>Számítás</button>
+    <button id="fogomb">Számítás</button>
     </section>
     
-
-    <h2>AZ ÖN BMI ÉRTÉKE: </h2>
+    <section id="BMI">
+    <h2>AZ ÖN BMI ÉRTÉKE: <span id="eredmeny"> </span> </h2>
+    </section>
     <table>
         <tr>
             <td class="bold">18,5 vagy kevesebb</td>
@@ -58,7 +65,9 @@
             <td>III.FOKÚ ELHÍZÁS</td>
         </tr>
     </table>
-    <h2>AZ IDEÁLIS TESTTÖMEGE: </h2>
+    <section id="ideal">
+    <h2>AZ IDEÁLIS TESTTÖMEGE: <span id="ieredmeny"> </span></h2>
+    </section>
     <table>
         <tr>
             <td id="s">56.7 - 76.3kg</td>
